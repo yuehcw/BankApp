@@ -29,15 +29,18 @@ This project is an online banking application that allows users to:
     - Set up MySQL Workbench:
         - Open MySQL Workbench and connect to local instance 3306.
         - Create schema:
-            - Use the SQL script provided in `bankAcct.sql` to create the database and table.
-    - Set up database account:
-        - Open the `db.js` file, replace the `username` and `password` with yours
+            - Use the SQL script provided in `bankSchema.sql` to create the database and table.
 
 3. Clone the repository:
     ```bash
     git clone https://github.com/yuehcw/BankApp.git
     cd BankApp
     ```
+   
+4. Set up the database account:
+   ```bash
+   Open the `db.js` file, replace the `username` and `password` with yours
+   ```
 
 4. Install main directory dependencies:
     ```bash
