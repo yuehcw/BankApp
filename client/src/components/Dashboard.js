@@ -8,8 +8,13 @@ const Dashboard = () => {
   useEffect(() => {
     const fetchBalance = async () => {
       try {
+        const userId = localStorage.getItem("userId");
+        if (!userId) {
+          console.error("User ID not found in localStorage");
+          return;
+        }
         const response = await axios.get(
-          `${process.env.REACT_APP_API_URL}/api/users/balance`,
+          `${process.env.REACT_APP_API_URL}/api/users/balance/${userId}`,
           {
             headers: {
               Authorization: `Bearer ${localStorage.getItem("token")}`,
