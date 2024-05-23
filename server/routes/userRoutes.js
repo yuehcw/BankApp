@@ -8,6 +8,6 @@ router.post('/register', register);
 router.post('/login', login);
 router.post('/deposit', auth, deposit);
 router.post('/withdraw', auth, withdraw);
-router.get('/balance', auth, balance);
+router.get('/balance/:userId', auth, balance);
 
 module.exports = router;
