@@ -1,0 +1,239 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 10px 20px;
+  color: #fff;
+}
+
+.header .logo {
+  color: #fff;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  margin-top: auto;
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 100px);
+  background: linear-gradient(to bottom, #e0e0e0, rgba(0, 0, 0, 0.84));
+}
+
+.container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+  width: 400px;
+  margin-top: 60px;
+}
+
+.deposit-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+  width: 400px;
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.withdraw-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+  width: 400px;
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  border-radius: 4px;
+}
+
+input {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.input-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.message-row {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.message-row p {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.balance-amount {
+  display: inline-block;
+  text-align: right;
+  margin-left: auto;
+  min-width: 150px;
+}
+
+.button-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+button {
+  padding: 10px;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 330px;
+}
+
+.back-button {
+  margin-bottom: 20px;
+  cursor: pointer;
+  align-self: flex-start;
+}
+
+.back-button:hover {
+  color: #218838;
+}
+
+.back-button .anticon {
+  margin-right: 8px;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+.error {
+  color: red;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.signout-button {
+  width: 87.88px;
+}
+
+.login-button, .register-button {
+  width: 400px;
+}
+
+.deposit-button {
+  margin-left: 10px;
+  width: 100px;
+}
+
+.withdraw-button {
+  margin-left: 10px;
+  width: 100px;
+}
+
+.dashboard-button {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-button {
+  padding: 0 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  text-decoration: none;
+  width: 120px;
+  height: 50px;
+}
+
+.nav-button-success {
+  display: flex;
+  justify-content: center;
+}
+
+.nav-button:hover {
+  background-color: #0056b3;
+}
+
+
+.username-badge {
+  font-weight: bold;
+  font-size: 20px;
+  padding: 0 20px;
+}
+
+.username-icon {
+  margin-right: 5px;
+}
+
+.new-balance {
+  font-weight: bold;
+}
+
