@@ -94,9 +94,15 @@ form {
   border-radius: 4px;
 }
 
-input {
+form input {
   padding: 10px;
   margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.input-row input {
+  padding: 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
 }
