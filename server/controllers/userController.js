@@ -22,9 +22,10 @@ exports.register = async (req, res) => {
   }
 
   try {
+    const hashedPassword = await bcrypt.hash(password, 10);
     const user = await User.create({
       username,
-      password,
+      password: hashedPassword,
       balance: parseFloat(initialBalance),
     });
     res
@@ -47,8 +48,7 @@ exports.login = async (req, res) => {
       return res.status(400).json({ message: "invalid_input" });
     }
 
-    const isMatch = (password === user.password);
-
+    const isMatch = await bcrypt.compare(password, user.password);
     if (!isMatch) {
       return res.status(400).json({ message: "invalid_input" });
     }
