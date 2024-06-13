@@ -20,7 +20,7 @@ const Deposit = () => {
           return;
         }
         const response = await axios.get(
-            `${process.env.REACT_APP_API_URL}/api/users/balance/${userId}`,
+            `${process.env.REACT_APP_API_URL}/api/users/balance`,
           {
             headers: {
               Authorization: `Bearer ${localStorage.getItem("token")}`,
